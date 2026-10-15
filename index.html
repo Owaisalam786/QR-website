@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100e">
+  <meta name="description" content="Wolk Night — a premium café loyalty experience. Scan, collect rewards, and return for your next favourite cup.">
+  <title>Wolk Night — Loyalty, beautifully brewed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Wolk Night home"><span class="brand-mark">W</span><span>WOLK <i>NIGHT</i><small>COFFEE · COMMUNITY · REWARDS</small></span></a>
+    <nav><a href="#how-it-works">How it works</a><a href="#rewards">Rewards</a><button class="button button-small button-outline" id="staff-toggle">Staff portal <span>↗</span></button></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT FAVOURITE RITUAL</div>
+        <h1>Good coffee.<br><em>Better reasons</em><br>to come back.</h1>
+        <p class="hero-description">A little appreciation, brewed into every visit. Join Wolk Night Rewards and unlock something special on your next cup.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#join">Join the club <span>↗</span></a><a class="text-link" href="#how-it-works">Discover the ritual <span>↓</span></a></div>
+        <div class="hero-proof"><div class="avatars"><span>W</span><span>☕</span><span>✦</span></div><div><strong>A warmer kind of loyalty</strong><small>Made for our regulars, new and old.</small></div></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="coffee-card"><div class="card-top"><span>WOLK NIGHT</span><span class="tiny-star">✳</span></div><div class="cup-art"><div class="steam steam-one"></div><div class="steam steam-two"></div><div class="cup"><div class="cup-logo">W</div></div><div class="saucer"></div></div><div class="card-bottom"><span>YOUR DAILY PAUSE</span><span>EST. WITH CARE</span></div></div>
+        <div class="floating-note note-top"><span class="note-icon">✦</span><div><strong>Little treats</strong><small>Worth coming back for</small></div></div>
+        <div class="floating-note note-bottom"><span class="note-icon">↗</span><div><strong>Scan. Sip. Repeat.</strong><small>Your ritual, rewarded.</small></div></div>
+        <div class="art-caption">A GOOD THING, ON REPEAT <span>✳</span></div>
+      </div>
+    </section>
+    <section class="stats-strip"><div><strong>01</strong><span>Scan your unique QR</span></div><div><strong>02</strong><span>Collect visits with every coffee</span></div><div><strong>03</strong><span>Enjoy a little thank-you</span></div></section>
+    <section class="section how-section" id="how-it-works">
+      <div class="section-heading"><div><div class="eyebrow">THE SIMPLE PLEASURES</div><h2>Three steps. <em>One lovely habit.</em></h2></div><p>No cards to carry. No fuss to remember. Just good coffee and a little something extra.</p></div>
+      <div class="steps-grid">
+        <article class="step-card"><span class="step-number">01 / JOIN</span><div class="step-visual qr-visual"><div class="mini-qr" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="scan-line"></span></div><h3>Make it yours</h3><p>Register with your name and phone number to create your loyalty identity.</p></article>
+        <article class="step-card"><span class="step-number">02 / VISIT</span><div class="step-visual cup-visual"><span class="cup-icon">☕</span><span class="sparkle sparkle-a">✦</span><span class="sparkle sparkle-b">✳</span></div><h3>Come as you are</h3><p>Show your loyalty QR to the team whenever you stop by for your favourite brew.</p></article>
+        <article class="step-card"><span class="step-number">03 / ENJOY</span><div class="step-visual reward-visual"><div class="reward-ticket"><span>W</span><strong>₹100</strong><small>A LITTLE THANK-YOU</small></div></div><h3>A treat on us</h3><p>Reach the reward milestone and unlock a ₹100 coupon, subject to staff verification.</p></article>
+      </div>
+    </section>
+    <section class="join-section" id="join">
+      <div class="join-copy"><div class="eyebrow">YOUR TABLE IS WAITING</div><h2>Come for the coffee.<br><em>Stay for the feeling.</em></h2><p>Start your Wolk Night Rewards journey. Your personal QR code will be ready right here.</p><div class="join-perk"><span>✳</span><div><strong>Made for your next visit</strong><small>Keep your QR code handy when you visit us.</small></div></div></div>
+      <div class="form-card"><div class="form-header"><span class="form-icon">✳</span><div><h3>Join Wolk Night</h3><p>It takes less than a minute.</p></div></div>
+        <form id="join-form">
+          <label for="customer-name">Your name</label><input id="customer-name" name="name" autocomplete="name" placeholder="e.g. Owais Alam" required maxlength="70">
+          <label for="customer-phone">Mobile number</label><input id="customer-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="10-digit mobile number" required maxlength="16">
+          <label class="consent"><input type="checkbox" id="consent" required><span>I agree to receive loyalty updates related to my Wolk Night account. I can opt out anytime.</span></label>
+          <button class="button button-gold button-full" type="submit">Create my loyalty QR <span>↗</span></button>
+          <p class="privacy-note"><span>♧</span> Your details stay private and are used to manage your rewards.</p>
+        </form>
+        <div class="success-panel" id="success-panel" hidden><div class="success-mark">✓</div><h3>Welcome to the club.</h3><p>Your demo loyalty QR is ready. Save it for your next visit.</p><div id="customer-qr" class="customer-qr"></div><strong id="customer-id"></strong><button class="button button-outline button-full" id="download-qr" type="button">Download QR code ↓</button><button class="reset-link" id="new-member" type="button">Register another member</button><small class="demo-note">DEMO MODE · For production, QR tokens and coupon validation must be handled by a secure backend.</small></div>
+      </div>
+    </section>
+    <section class="rewards-section" id="rewards"><div class="reward-panel"><div class="reward-symbol">✳</div><div><div class="eyebrow">A LITTLE SOMETHING EXTRA</div><h2>Good things come <em>full circle.</em></h2><p>Keep showing up for your favourite coffee. When you reach the reward milestone, the team can verify your account and issue your ₹100 coupon.</p></div><div class="reward-value"><small>YOUR REWARD</small><strong>₹100</strong><span>WOLK NIGHT COUPON</span></div></div></section>
+    <section class="staff-section" id="staff-section" hidden><div class="section-heading"><div><div class="eyebrow">TEAM ACCESS</div><h2>Staff <em>workspace.</em></h2></div><p>Local demo tools only. Connect a verified server and database before using this for real customers.</p></div><div class="staff-card"><div><span class="eyebrow">CUSTOMER LOOKUP</span><h3>Find a loyalty member</h3><p>Enter a member ID from this browser's demo registrations.</p></div><form id="lookup-form" class="lookup-form"><input id="lookup-id" placeholder="WN-XXXXXXXX" aria-label="Member ID" required><button class="button button-gold" type="submit">Look up</button></form><div id="lookup-result" class="lookup-result" aria-live="polite"></div><div class="staff-warning">⚠ This browser-only demo is not secure for real coupon issuance. Do not use it to approve discounts or store real customer data.</div></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">W</span><span>WOLK <i>NIGHT</i><small>COFFEE · COMMUNITY · REWARDS</small></span></a><span>GOOD COFFEE, GOOD COMPANY.</span><span>© <span id="year"></span> WOLK NIGHT</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
